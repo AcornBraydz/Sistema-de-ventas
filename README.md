@@ -1,68 +1,68 @@
-# Heritage POS & License Management System
+# Heritage POS & Gestor de Licencias
 
-![Sistema de Ventas](https://img.shields.io/badge/Status-Active-success) 
+![Sistema de Ventas](https://img.shields.io/badge/Estado-Activo-success) 
 ![React](https://img.shields.io/badge/React-19.2-blue)
 ![Electron](https://img.shields.io/badge/Electron-44.1-lightgrey)
 
-A comprehensive Point of Sale (POS) and License Management System built for scalability, robustness, and performance. This repository uses a monorepo-style structure containing the main POS application and a dedicated desktop application for license control.
+Un sistema integral de Punto de Venta (POS) y Gestión de Licencias construido para ser escalable, robusto y rápido. Este repositorio utiliza una estructura tipo monorepo que contiene tanto la aplicación principal de punto de venta como una aplicación de escritorio dedicada para el control de las licencias.
 
-## 🚀 Project Structure
+## 🚀 Estructura del Proyecto
 
-The project is divided into two main components:
+El proyecto está dividido en dos componentes principales:
 
 ### 1. Heritage POS (`/PaginaWeb`)
-The core Point of Sale application providing a rich, responsive interface for sales and inventory management.
+La aplicación principal de Punto de Venta que ofrece una interfaz súper completa y responsiva para el manejo de ventas e inventario.
 
-- **Frontend:** React 19, Vite, Tailwind CSS, Zustand (State Management), React Router
-- **Desktop Wrapper:** Electron (cross-platform deployment)
-- **UI Components:** Recharts (analytics), Lucide React (icons)
-- **Features:** Responsive dashboard, sales tracking, inventory management.
+- **Frontend:** React 19, Vite, Tailwind CSS, Zustand (Manejo de estados), React Router
+- **Aplicación de Escritorio:** Electron (despliegue multiplataforma)
+- **Componentes de Interfaz:** Recharts (analíticas y gráficas), Lucide React (íconos)
+- **Características:** Dashboard responsivo, registro de ventas, control total de inventario.
 
 ### 2. Gestor de Licencias (`/Gestor de Licencias`)
-A dedicated Master Control desktop application to manage licenses and system access.
+Una aplicación de escritorio de Control Maestro (Master Control) para administrar las licencias y el acceso al sistema.
 
 - **Framework:** Electron & Node.js
-- **Backend/API:** Express, Supabase (Authentication/Database), SQLite3 (Local DB)
-- **Security:** JSON Web Tokens (JWT)
-- **Features:** App authentication, centralized license generation, access control.
+- **Backend/API:** Express, Supabase (Autenticación/Base de Datos), SQLite3 (Base de datos local)
+- **Seguridad:** JSON Web Tokens (JWT)
+- **Características:** Autenticación de la aplicación, generación centralizada de licencias, control de accesos.
 
-## 🛠️ Prerequisites
+## 🛠️ Requisitos Previos
 
-Make sure you have installed:
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+Asegúrate de tener instalado lo siguiente en tu equipo:
+- [Node.js](https://nodejs.org/) (se recomienda la versión v18 o superior)
 - [Git](https://git-scm.com/)
 
-## 📦 Installation & Setup
+## 📦 Instalación y Configuración
 
-Clone the repository:
+Clona el repositorio a tu equipo:
 ```bash
 git clone https://github.com/AcornBraydz/Sistema-de-ventas.git
 cd Sistema-de-ventas
 ```
 
-### Running Heritage POS
-Navigate to the POS directory, install dependencies, and run in development mode:
+### Correr Heritage POS
+Navega a la carpeta del POS, instala las dependencias y córrelo en modo de desarrollo:
 ```bash
 cd PaginaWeb
 npm install
 npm run electron:dev
 ```
-To build the application:
+Para construir la versión final (build) de la aplicación:
 ```bash
 npm run electron:build
 ```
 
-### Running the License Manager (Gestor de Licencias)
-Navigate to the License Manager directory, install dependencies, and start the app:
+### Correr el Gestor de Licencias
+Navega a la carpeta del Gestor de Licencias, instala las dependencias e inicia la aplicación:
 ```bash
 cd "../Gestor de Licencias"
 npm install
 npm start
 ```
-To build the application for production:
+Para construir la versión final para producción:
 ```bash
 npm run build
 ```
 
-## 📄 License
-This project is proprietary. All rights reserved.
+## 📄 Licencia
+Este proyecto es propietario. Todos los derechos reservados.
